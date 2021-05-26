@@ -1,4 +1,5 @@
 from contestants import Contestant
+import random
 
 
 class Sweepstakes:
@@ -32,7 +33,7 @@ class Sweepstakes:
         self.contestants_list.append({f"'first_name': {new_contestant.first_name}, 'last_name': {new_contestant.last_name}, 'email': {new_contestant.email}, 'registration_number': {new_contestant.registration_number}"})
 
     def pick_winner(self):
-        pass
+        print(self.contestants_list[random.randint(0, len(self.contestants_list)-1)])
 
     def print_contestant_info(self, contestant):
         print(contestant.first_name)

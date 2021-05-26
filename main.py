@@ -10,3 +10,4 @@ print(sweeps.contestants_list)
 sweeps.register_contestant(contestants.Contestant("Matt", "Bollocks", "email", 4))
 
 print(sweeps.contestants_list)
+sweeps.pick_winner()
