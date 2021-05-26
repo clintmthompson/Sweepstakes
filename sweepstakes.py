@@ -30,7 +30,7 @@ class Sweepstakes:
 
     def register_contestant(self, contestant):
         new_contestant = contestant
-        self.contestants_list.append({f"'first_name': {new_contestant.first_name}, 'last_name': {new_contestant.last_name}, 'email': {new_contestant.email}, 'registration_number': {new_contestant.registration_number}"})
+        self.contestants_list.append({'first_name': new_contestant.first_name, 'last_name': new_contestant.last_name, 'email': new_contestant.email, 'registration_number': new_contestant.registration_number})
 
     def pick_winner(self):
         winner = self.contestants_list[random.randint(0, len(self.contestants_list)-1)]
