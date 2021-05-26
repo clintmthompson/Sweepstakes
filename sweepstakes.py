@@ -28,7 +28,8 @@ class Sweepstakes:
         ]
 
     def register_contestant(self, contestant):
-        pass
+        new_contestant = contestant
+        self.contestants_list.append({f"'first_name': {new_contestant.first_name}, 'last_name': {new_contestant.last_name}, 'email': {new_contestant.email}, 'registration_number': {new_contestant.registration_number}"})
 
     def pick_winner(self):
         pass
