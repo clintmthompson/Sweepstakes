@@ -1,5 +1,7 @@
 import sweepstakes
 from sweepstakes import Sweepstakes
+from sweepstakes_queue_manager import SweepstakesQueueManager
+from sweepstakes_stack_manager import SweepstakesStackManager
 
 
 class Manager:
