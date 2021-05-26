@@ -33,7 +33,9 @@ class Sweepstakes:
         self.contestants_list.append({f"'first_name': {new_contestant.first_name}, 'last_name': {new_contestant.last_name}, 'email': {new_contestant.email}, 'registration_number': {new_contestant.registration_number}"})
 
     def pick_winner(self):
-        print(self.contestants_list[random.randint(0, len(self.contestants_list)-1)])
+        winner = self.contestants_list[random.randint(0, len(self.contestants_list)-1)]
+        self.print_contestant_info(winner)
+        return winner
 
     def print_contestant_info(self, contestant):
-        print(contestant.first_name)
+        print(f"Congratulations to our winner, {contestant['first_name']} {contestant['last_name']}!!!")
