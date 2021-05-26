@@ -4,10 +4,8 @@ import sweepstakes
 from marketing_firm import Manager
 import marketing_firm_creator
 
-sweeps = sweepstakes.Sweepstakes("Sweeps")
-print(sweeps.contestants_list)
 
-sweeps.register_contestant(contestants.Contestant("Matt", "Bollocks", "email", 4))
-
-print(sweeps.contestants_list)
+jimmy_pesto = marketing_firm.Manager("Jimmy Pesto")
+sweeps = jimmy_pesto.create_sweepstakes()
+sweeps.register_contestant(contestants.Contestant("Sally", "Fields", "sally@aol.com", 4))
 sweeps.pick_winner()

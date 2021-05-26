@@ -8,5 +8,4 @@ class Manager:
         self.manager = manager
 
     def create_sweepstakes(self):
-        sweepstakes_list = [sweepstakes.Sweepstakes("Mega Millions").contestants_list]
-        return sweepstakes_list
+        return sweepstakes.Sweepstakes("Mega Millions")
