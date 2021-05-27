@@ -1,3 +1,4 @@
+import marketing_firm_creator
 import sweepstakes
 from sweepstakes import Sweepstakes
 from sweepstakes_queue_manager import SweepstakesQueueManager
@@ -9,5 +10,5 @@ class Manager:
     def __init__(self, manager):
         self.manager = manager
 
-    def create_sweepstakes(self):
-        return sweepstakes.Sweepstakes("Mega Millions")
+    def create_sweepstakes(self, name):
+        return sweepstakes.Sweepstakes(name)

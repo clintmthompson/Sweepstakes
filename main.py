@@ -5,7 +5,22 @@ from marketing_firm import Manager
 import marketing_firm_creator
 
 
-jimmy_pesto = marketing_firm.Manager("Jimmy Pesto")
-sweeps = jimmy_pesto.create_sweepstakes()
-sweeps.register_contestant(contestants.Contestant("Sally", "Fields", "sally@aol.com", 4))
-sweeps.pick_winner()
+
+
+class UI:
+
+    def __init__(self):
+        pass
+
+    def run_simulation(self):
+        self.choose_manager_prompt()
+
+    def choose_manager_prompt(self):
+        print("Welcome, would you like to store your data in a stack, or a queue?")
+        data_choice = input("Please choose:\n 's' for stack\n 'q' for queue")
+        if data_choice == "s":
+            data_structure = marketing_firm_creator.choose_manager_type("stack")
+        elif data_choice == "q":
+            data_structure = marketing_firm_creator.choose_manager_type("queue")
+
+UI().run_simulation()
