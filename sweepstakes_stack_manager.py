@@ -4,7 +4,8 @@ from stack import Stack
 class SweepstakesStackManager:
 
     def __init__(self):
-        pass
+        self.name = "stack"
+
 
     def insert_sweepstakes(self, sweepstakes):
         Stack.push(sweepstakes)

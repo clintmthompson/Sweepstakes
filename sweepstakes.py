@@ -38,4 +38,8 @@ class Sweepstakes:
         return winner
 
     def print_contestant_info(self, contestant):
-        print(f"Congratulations to our winner, {contestant['first_name']} {contestant['last_name']}!!!")
+        for people in self.contestants_list:
+            if people['first_name'] != contestant['first_name']:
+                print(f"{people['first_name']} {people['last_name']}, please congratulate our winner, {contestant['first_name']} {contestant['last_name']}!!!")
+            else:
+                print(f"Hello {contestant['first_name']} {contestant['last_name']}, you are our grand prize winner!!!")

@@ -4,7 +4,7 @@ from queues import Queue
 class SweepstakesQueueManager:
 
     def __init__(self):
-        pass
+        self.name = "queue"
 
     def insert_sweepstakes(self, sweepstakes):
         Queue.enqueue(sweepstakes)
