@@ -10,9 +10,7 @@ class Manager:
     def __init__(self, manager):
         self.manager = manager
 
-
     def create_sweepstakes(self, name):
         return sweepstakes.Sweepstakes(name)
 
-#   def store_sweepstakes(self, sweepstakes):
-#       if self.manager.
+

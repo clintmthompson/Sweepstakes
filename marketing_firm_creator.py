@@ -1,12 +1,13 @@
 import marketing_firm
+import queues
 import sweepstakes_queue_manager
 import sweepstakes_stack_manager
 
 
 def choose_manager_type(type):
     if type == "queue":
-        data_structure = sweepstakes_queue_manager.SweepstakesQueueManager()
-        return data_structure
+        manager = marketing_firm.Manager("queue")
+        return manager
     elif type == "stack":
-        data_structure = sweepstakes_stack_manager.SweepstakesStackManager()
-        return data_structure
+        manager = marketing_firm.Manager("stack")
+        return manager
